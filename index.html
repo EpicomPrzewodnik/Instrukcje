@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Przewodnik</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+  <!-- Kolor paska na telefonie -->
+  <meta name="theme-color" content="#111827" />
+</head>
+<body>
+  
+
+  <div class="guide">
+  <img src="./images/strona_1.webp" alt="zdj1">
+  <img src="./images/strona_2.webp" alt="zdj2">
+  <img src="./images/strona_3.webp" alt="zdj3">
+  <img src="./images/strona_4.webp" alt="zdj4">
+  <img src="./images/strona_5.webp" alt="zdj5">
+  <img src="./images/strona_6.webp" alt="zdj6">
+  <img src="./images/strona_7.webp" alt="zdj7">
+  <img src="./images/strona_8.webp" alt="zdj8">
+  <img src="./images/strona_9.webp" alt="zdj9">
+  <img src="./images/strona_10.webp" alt="zdj10">
+  <img src="./images/strona_11.webp" alt="zdj11">
+  <img src="./images/strona_12.webp" alt="zdj12">
+  <img src="./images/strona_13.webp" alt="zdj13">
+  <img src="./images/strona_14.webp" alt="zdj14">
+  <img src="./images/strona_15.webp" alt="zdj15">
+  <img src="./images/strona_16.webp" alt="zdj16">
+  <img src="./images/strona_17.webp" alt="zdj17">
+  <img src="./images/strona_18.webp" alt="zdj18">
+  <img src="./images/strona_19.webp" alt="zdj19">
+  <img src="./images/strona_20.webp" alt="zdj20">
+   
+</div>
+
+    
+  <main>
+    <button id="installButton" hidden>
+      Zainstaluj aplikację
+    </button>
+  </main>
+
+  <script src="./js/app.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => {
+          console.log("Service Worker zarejestrowany");
+        })
+        .catch(error => {
+          console.error("Błąd Service Workera:", error);
+        });
+    }
+  </script>
+</body>
+</html>
