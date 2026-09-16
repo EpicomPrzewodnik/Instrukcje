@@ -1,4 +1,4 @@
-const CACHE_NAME = "przewodnik-pwa-v3";
+const CACHE_NAME = "przewodnik-pwa-v4";
 const CORE_FILES = [
   "./",
   "./index.html",
